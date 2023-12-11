@@ -1,0 +1,67 @@
+========================================================
+Task1 Normalization(Day 3)
+========================================================
+Not Normaized Data:
+Items:
+ItemNum(PK), ItemDescription, Quantity, Price
+order :
+OrderNum(CK), ItemNumber(CK), OrderDate, CustNum, CustAdd, ClerkNum, ClekName
+========================================================
+FirstNormalForm:
+Items:
+The Same
+Order:
+The Same
+========================================================
+SecondNormalForm:
+Items:
+ItemNum(PK), ItemDescription, Price
+OrderedItems:
+ItemNum(PK), Quantity, TotalPrice
+Order:
+TheSame
+========================================================
+ThirdNormalForm:
+Items:
+ItemNum(PK), ItemDescription, Price
+OrderedItems:
+ItemNum(PK), Quantity, TotalPrice
+order:
+OrderNum(PK), OrderDate, CustNum(FK), ClerkNum(FK)
+Customer:
+CustomerNum(PK), CustAdd
+Clerk:
+ClerkNum(PK), ClekName
+================================================================================================================
+Task2 Normalization
+========================================================
+Not Normaized Data:
+Table:
+dept#, deptName, loc, mangerName, manageID, TeLExtn, cust#, CustName, dateComplaint, natureComplaint
+========================================================
+FirstNormalForm:
+Table:
+TheSame
+========================================================
+SecondForm:
+Department:
+dept#(PK), deptName, loc, manageID,
+Customer:
+cust#(PK), CustName
+Manager:
+ManageID(PK), ManagerName
+Table:
+dept#(PK), manageID(FK), TeLExtn, cust#(FK), dateComplaint, natureComplaint
+
+========================================================
+ThirdForm:
+Department:
+dept#(PK), deptName, loc, manageID,
+Customer:
+cust#(PK), CustName
+Manager:
+ManageID(PK), ManagerName
+
+AllCustComplaint:
+dept#(FK), ManageID(FK), cust#(FK), dateComplaint, natureComplaint
+========================================================
