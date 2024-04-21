@@ -1,6 +1,10 @@
-# Data-Cleaning-EDA-using-SQL
+For GitHub Repository: # Data-Cleaning-EDA-using-SQL
+#### In this project, I performed data cleaning and exploratory data analysis (EDA) on a dataset obtained from a Call Center using SQL.
 
-In this project we analyse a dataset we got from 'Real World Fake Data' using SQL then we visualize it using Tableau.
+### Using SQL 
+### On SSMS
 
-The link to the dataset : https://data.world/markbradbourne/rwfd-real-world-fake-data/workspace/file?filename=Call+Center.csv
+#### Data Preprocessing
+#### Data Analysis
 
+#### Dataset Link: [Call Center Dataset](https://data.world/markbradbourne/rwfd-real-world-fake-data/workspace/file?filename=Call+Center.csv)
